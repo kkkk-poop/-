@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Đăng nhập</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <h1 class="logo">Swanky Fashion</h1>
+      <ul class="menu">
+        <li><a href="index.html">Trang chủ</a></li>
+        <li><a href="product.html">Sản phẩm</a></li>
+        <li><a href="cart.html">Giỏ hàng</a></li>
+        <li><a href="login.html" id="login-link">Đăng nhập</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="login-box">
+    <h2>Đăng nhập</h2>
+    <form onsubmit="return login(event)">
+      <label for="username">Tên đăng nhập:</label>
+      <input type="text" id="username" required>
+      <label for="password">Mật khẩu:</label>
+      <input type="password" id="password" required>
+      <button type="submit" class="btn">Đăng nhập</button>
+    </form>
+    <p id="login-message" style="color:red;"></p>
+  </section>
+
+  <footer>
+    <p>© 2025 Swanky Fashion Store</p>
+  </footer>
+</body>
+</html>

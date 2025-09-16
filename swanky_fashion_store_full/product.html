@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chi tiết sản phẩm</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <h1 class="logo">Swanky Fashion</h1>
+      <ul class="menu">
+        <li><a href="index.html">Trang chủ</a></li>
+        <li><a href="product.html">Sản phẩm</a></li>
+        <li><a href="cart.html">Giỏ hàng</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="product-detail">
+    <img src="https://via.placeholder.com/400x500" alt="Áo thun unisex">
+    <div class="detail-info">
+      <h2>Áo thun unisex</h2>
+      <p class="price">250,000đ</p>
+      <p>Chất liệu cotton, form rộng thoải mái, phù hợp cho cả nam và nữ.</p>
+      <label for="size">Chọn size:</label>
+      <select id="size">
+        <option>S</option>
+        <option>M</option>
+        <option>L</option>
+        <option>XL</option>
+      </select>
+      <button onclick="addToCart('Áo thun unisex', 250000)">Thêm vào giỏ</button>
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 Swanky Fashion Store</p>
+  </footer>
+</body>
+</html>
